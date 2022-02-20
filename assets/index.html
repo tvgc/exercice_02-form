@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
     <title>Form</title>
 </head>
 <body>
-    
+    <main>
+        <div class="background-image"></div>
+        <div class="container">
+            <div class="form-container">
+                <h1>FORMULÁRIO</h1>
+                <form action="" method="post"> <!-- inserir em action o link de destino -->
+                    <div class="item">
+                        <label for="name">
+                            <div class="input-title">NAME</div><br>
+                            <input type="text" name="user" id="name">  <!-- type é o tipo do input, name é título do input, e id é para conectar com o label e quando o usuário clicar em cima do "NAME" automaticamente seleciona o input -->
+                        </label>
+                    </div>
+                    <div class="item">
+                        <label for="e-mail">
+                            <div class="input-title">EMAIL</div><br>
+                            <input type="email" name="e-mail" id="e-mail">
+                        </label>
+                    </div>
+                    <div class="item">
+                        <label for="phone-number">
+                            <div class="input-title">PHONE</div><br>
+                            <input type="tel" name="phone-number" id="phone-number">
+                        </label>
+                    </div>
+                    <div class="item gender">
+                        <label for="gender">
+                            <div class="input-title">GENDER</div><br>
+                            <div class="out-container">
+                                <div class="in-container">
+                                    <input type="radio" name="gender" value="M"><p>Male</p>
+                                    <input type="radio" name="gender" value="F"><p>Female</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <button>SEND</button>
+                </form>
+            </div>            
+        </div>
+    </main>
 </body>
 </html>
